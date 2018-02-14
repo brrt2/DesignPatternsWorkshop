@@ -17,12 +17,12 @@ public class MementoClient {
 
     originator.setLedTV(new LedTV("50 inch","1300 bucks", true));
 
-    System.out.println("Originator current status" + originator);
+    System.out.println("Current state : " + originator);
 
     System.out.println("Restoring originator to 42 inch");
     originator.restorePrevious(catetaker.getPreviousState(0));
 
-    System.out.println("Originator current state" + originator);
+    System.out.println("Current state : " + originator);
 
   }
 
